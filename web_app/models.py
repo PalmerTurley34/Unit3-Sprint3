@@ -14,6 +14,15 @@ class Book(db.Model):
 
     def __repr__(self):
         return f"<Book {self.id} {self.title}>"
+
+class Tweet(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    tweet = db.Column(db.String(128))
+    user = db.Column(db.String(128))
+
+    def __repr__(self):
+        return f"<Tweet {self.id} {self.tweet}>"
+
     
 def parse_records(database_records):
     """
