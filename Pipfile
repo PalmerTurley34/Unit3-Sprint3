@@ -12,6 +12,7 @@ python-dotenv = "*"
 requests = "*"
 basilica = "*"
 tweepy = "*"
+sklearn = "*"
 
 [dev-packages]
 
